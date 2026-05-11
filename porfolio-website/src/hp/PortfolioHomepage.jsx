@@ -57,6 +57,36 @@ export default function PortfolioHomepage() {
         </div>
 
         <BentoGrid />
+
+       {/* Technical Skills header */}
+      <div
+        style={{
+          borderTop: `1.5px solid ${colors.dark}`,
+          paddingTop: "2rem",
+        }}
+      >
+        <div
+          style={{
+            padding: "0 2.5rem 1.5rem",
+            textAlign: "left",
+          }}
+        >
+          <span
+            style={{
+              fontFamily: "'Syne', sans-serif",
+              fontSize: "0.75rem",
+              fontWeight: 700,
+              textTransform: "uppercase",
+              letterSpacing: "0.12em",
+              color: "#888",
+
+            }}
+          >
+            Technical Skills
+          </span>
+        </div>
+        </div>
+
         <SkillsStrip />
         <AboutStrip />
         <Footer />

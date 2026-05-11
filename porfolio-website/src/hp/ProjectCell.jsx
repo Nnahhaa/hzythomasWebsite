@@ -57,25 +57,6 @@ export default function ProjectCell({ project }) {
         )}
       </div>
 
-      {/* Middle: code snippet decoration */}
-      {project.shape === "code" && (
-        <div
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: "0.7rem",
-            color: "rgba(255,255,255,0.4)",
-            lineHeight: 1.6,
-          }}
-        >
-          {"async fn handle_request(req: Request) {"}
-          <br />
-          {"  let data = db.query(...);"}<br />
-          {"  Ok(json!(data))"}
-          <br />
-          {"}"}
-        </div>
-      )}
-
       {/* Bottom: tech tag + title + desc */}
       <div>
         {project.tech && (
@@ -140,6 +121,24 @@ export default function ProjectCell({ project }) {
           }}
         />
       )}
+
+      {project.shape === "triangle" && (
+        <div
+          style={{
+            position: "absolute",
+            left: -20,
+            bottom: -20,
+            width: 120,
+            height: 120,
+            borderLeft: "${size/2}px solid transparent",
+            borderRight: "${size/2}px solid transparent",
+            borderBottom: "${size}px solid rgba(255, 255, 255, 0.15",
+            background: "transparent",
+          }}
+        />
+      )}
+
+
     </div>
   );
 }

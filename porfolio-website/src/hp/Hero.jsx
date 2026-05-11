@@ -11,7 +11,7 @@ export default function Hero() {
 
   const buttons = [
     { label: "View projects", primary: true },
-    { label: "Download CV", primary: false },
+    { label: "Download Resume", primary: false },
   ];
 
   const styles = {

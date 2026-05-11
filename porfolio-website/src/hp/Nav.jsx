@@ -3,7 +3,7 @@ import { colors } from "../constants";
 
 export default function Nav() {
   const [hovered, setHovered] = useState(null);
-  const links = ["Work", "About", "Blog"];
+  const links = ["Projects", "About", "Resume",];
 
   return (
     <nav
