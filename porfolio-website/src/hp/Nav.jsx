@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { colors } from "../constants";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   const [hovered, setHovered] = useState(null);
@@ -28,14 +29,14 @@ export default function Nav() {
           letterSpacing: "-0.5px",
         }}
       >
-        hthomas
+        hzythomas
       </div>
 
       <ul style={{ display: "flex", gap: "2rem", listStyle: "none", alignItems: "center" }}>
         {links.map((link) => (
           <li key={link}>
-            <a
-              href="#"
+            <Link
+              to={`/${link.toLowerCase()}`}
               onMouseEnter={() => setHovered(link)}
               onMouseLeave={() => setHovered(null)}
               style={{
@@ -48,7 +49,7 @@ export default function Nav() {
               }}
             >
               {link}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

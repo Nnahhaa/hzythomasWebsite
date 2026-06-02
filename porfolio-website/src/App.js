@@ -1,18 +1,19 @@
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PortfolioHomepage from './hp/PortfolioHomepage';
-
-import { globalStyles } from './constants';
-
-// Add global styles to document head
-const styleSheet = document.createElement("style");
-styleSheet.textContent = globalStyles;
-document.head.appendChild(styleSheet);
+import ProjectsPage from "./Projects/ProjectsPage";
+import AboutPage from './About/AboutPage';
+import ResumePage from './Resume/ResumePage';
 
 function App() {
   return (
-    <div className="App">
-      <PortfolioHomepage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<PortfolioHomepage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/resume" element={<ResumePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

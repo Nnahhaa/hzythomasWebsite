@@ -17,7 +17,7 @@ export default function Footer() {
       }}
     >
       <p style={{ fontSize: "0.8rem", color: "#888" }}>
-        hthomas. Built with passion.
+        hzythomas. Built with passion.
       </p>
 
       <div style={{ display: "flex", gap: "1.5rem" }}>
