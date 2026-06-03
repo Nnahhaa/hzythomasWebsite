@@ -10,8 +10,8 @@ export default function Hero() {
   }, []);
 
   const buttons = [
-    { label: "View projects", primary: true },
-    { label: "Download Resume", primary: false },
+    { label: "View Projects", primary: true, href: "/projects" },
+    { label: "Download Resumes", primary: false, href: "/resume" },
   ];
 
   const styles = {
@@ -122,16 +122,15 @@ export default function Hero() {
 
         {/* Subheading */}
         <p style={styles.subheading}>
-          Full-stack engineer with a love for clean architecture, delightful UIs,
-          and solving real problems with code.
+        Full-Stack Developer passionate about user-centered design and intelligent systems.
         </p>
 
         {/* CTA buttons */}
         <div style={styles.buttonGroup}>
-          {buttons.map(({ label, primary }) => (
+          {buttons.map(({ label, primary, href }) => (
             <a
               key={label}
-              href="#"
+              href={href}
               onMouseEnter={() => setBtnHover(label)}
               onMouseLeave={() => setBtnHover(null)}
               style={{

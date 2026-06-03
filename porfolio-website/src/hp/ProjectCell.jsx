@@ -5,73 +5,74 @@ export default function ProjectCell({ project }) {
   const [hovered, setHovered] = useState(false);
   const isLight = project.textColor === "#1A1A1A";
 
+  const mutedColor = isLight ? "rgba(0,0,0,0.45)" : "rgba(255,255,255,0.55)";
+  const tagBorder = isLight ? "rgba(0,0,0,0.25)" : "rgba(255,255,255,0.25)";
+
   return (
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
-        gridColumn: `span ${project.span.col}`,
-        gridRow: `span ${project.span.row}`,
         background: project.bg,
         borderRight: `1.5px solid ${colors.dark}`,
         borderBottom: `1.5px solid ${colors.dark}`,
-        padding: "1.5rem",
+        padding: "2.75rem 2.5rem",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
         position: "relative",
         overflow: "hidden",
         cursor: "pointer",
-        transition: "filter 0.2s",
-        filter: hovered ? "brightness(0.95)" : "brightness(1)",
+        minHeight: "280px",
+        transition: "filter 0.25s",
+        filter: hovered ? "brightness(0.93)" : "brightness(1)",
       }}
     >
-      {/* Top row: id + category label, optional square shape */}
-      <div>
-        <div
+      {/* Top: number + category */}
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+        <span
           style={{
-            fontSize: "0.65rem",
+            fontSize: "0.7rem",
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: "0.1em",
-            color: isLight ? "#444" : "rgba(255,255,255,0.6)",
+            color: mutedColor,
             fontFamily: "'DM Sans', sans-serif",
           }}
         >
           {project.id} — {project.category}
-        </div>
+        </span>
 
+        {/* Lime square decoration */}
         {project.shape === "square" && (
           <div
             style={{
-              position: "absolute",
-              top: "1.5rem",
-              right: "1.5rem",
-              width: 40,
-              height: 40,
+              width: 44,
+              height: 44,
               background: colors.lime,
-              borderRadius: 8,
+              borderRadius: 10,
               transform: "rotate(12deg)",
+              flexShrink: 0,
             }}
           />
         )}
       </div>
 
-      {/* Bottom: tech tag + title + desc */}
+      {/* Bottom: tag + title + desc */}
       <div>
         {project.tech && (
           <div
             style={{
-              fontSize: "0.65rem",
+              display: "inline-block",
+              fontSize: "0.7rem",
               fontWeight: 500,
               textTransform: "uppercase",
-              letterSpacing: "0.06em",
-              padding: "0.2rem 0.6rem",
+              letterSpacing: "0.07em",
+              padding: "0.25rem 0.75rem",
               borderRadius: "100px",
-              border: `1px solid ${isLight ? "rgba(0,0,0,0.3)" : "rgba(255,255,255,0.3)"}`,
-              color: isLight ? "#333" : "rgba(255,255,255,0.8)",
-              width: "fit-content",
-              marginBottom: "0.5rem",
+              border: `1px solid ${tagBorder}`,
+              color: isLight ? "#333" : "rgba(255,255,255,0.85)",
+              marginBottom: "0.85rem",
               fontFamily: "'DM Sans', sans-serif",
             }}
           >
@@ -82,10 +83,12 @@ export default function ProjectCell({ project }) {
         <div
           style={{
             fontFamily: "'Syne', sans-serif",
-            fontSize: project.span.col >= 5 ? "1.3rem" : "0.95rem",
+            fontSize: "1.6rem",
             fontWeight: 700,
-            lineHeight: 1.2,
+            lineHeight: 1.15,
+            letterSpacing: "-0.02em",
             color: project.textColor,
+            marginBottom: "0.6rem",
           }}
         >
           {project.title}
@@ -94,10 +97,10 @@ export default function ProjectCell({ project }) {
         {project.desc && (
           <div
             style={{
-              fontSize: "0.8rem",
-              color: isLight ? "#555" : "rgba(255,255,255,0.75)",
+              fontSize: "0.875rem",
+              color: mutedColor,
               fontWeight: 300,
-              marginTop: "0.4rem",
+              lineHeight: 1.6,
               fontFamily: "'DM Sans', sans-serif",
             }}
           >
@@ -111,34 +114,33 @@ export default function ProjectCell({ project }) {
         <div
           style={{
             position: "absolute",
-            right: -20,
-            bottom: -20,
-            width: 120,
-            height: 120,
+            right: -30,
+            bottom: -30,
+            width: 160,
+            height: 160,
             borderRadius: "50%",
-            border: "20px solid rgba(255,255,255,0.15)",
+            border: "28px solid rgba(255,255,255,0.12)",
             pointerEvents: "none",
           }}
         />
       )}
 
-      {project.shape === "triangle" && (
-        <div
-          style={{
-            position: "absolute",
-            left: -20,
-            bottom: -20,
-            width: 120,
-            height: 120,
-            borderLeft: "${size/2}px solid transparent",
-            borderRight: "${size/2}px solid transparent",
-            borderBottom: "${size}px solid rgba(255, 255, 255, 0.15",
-            background: "transparent",
-          }}
-        />
-      )}
-
-
+      {/* Arrow on hover */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: "2.75rem",
+          right: "2.5rem",
+          fontSize: "1.25rem",
+          color: project.textColor,
+          opacity: hovered ? 1 : 0,
+          transform: hovered ? "translate(0, 0)" : "translate(-6px, 6px)",
+          transition: "opacity 0.25s, transform 0.25s",
+          pointerEvents: "none",
+        }}
+      >
+        →
+      </div>
     </div>
   );
 }

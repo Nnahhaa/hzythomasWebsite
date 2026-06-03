@@ -105,7 +105,7 @@ function ResumeRow({ resume, isOpen, onToggle }) {
           <span style={{
             fontFamily: "'Syne', sans-serif",
             fontSize: "clamp(1.4rem, 3vw, 2.25rem)",
-            fontWeight: 800,
+            fontWeight: 700,
             letterSpacing: "-0.03em",
             color: active ? textColor : "#111111",
             transition: "color 0.2s",
@@ -336,7 +336,7 @@ export default function ResumePage() {
           <h1 style={{
             fontFamily: "'Syne', sans-serif",
             fontSize: "clamp(3rem, 8vw, 6rem)",
-            fontWeight: 800,
+            fontWeight: 700,
             lineHeight: 0.9,
             letterSpacing: "-0.04em",
           }}>

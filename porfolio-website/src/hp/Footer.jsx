@@ -1,7 +1,11 @@
 import { useState } from "react";
 import { colors } from "../constants";
 
-const footerLinks = ["GitHub", "LinkedIn", "Email"];
+const footerLinks = [
+  { label: "GitHub", href: "https://github.com/Nnahhaa" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/hannahthomas528/" },
+  { label: "Email", href: "mailto:hzythomas@gmail.com" },
+];
 
 export default function Footer() {
   const [hovered, setHovered] = useState(null);
@@ -21,22 +25,24 @@ export default function Footer() {
       </p>
 
       <div style={{ display: "flex", gap: "1.5rem" }}>
-        {footerLinks.map((link) => (
-          <a
-            key={link}
-            href="#"
-            onMouseEnter={() => setHovered(link)}
-            onMouseLeave={() => setHovered(null)}
-            style={{
-              fontSize: "0.8rem",
-              color: hovered === link ? colors.coral : "#555",
-              textDecoration: "none",
-              transition: "color 0.2s",
-            }}
-          >
-            {link}
-          </a>
-        ))}
+      {footerLinks.map(({ label, href }) => (
+        <a
+          key={label}
+          href={href}
+          target={label !== "Email" ? "_blank" : undefined}
+          rel="noreferrer"
+          onMouseEnter={() => setHovered(label)}
+          onMouseLeave={() => setHovered(null)}
+          style={{
+            fontSize: "0.8rem",
+            color: hovered === label ? colors.coral : "#555",
+            textDecoration: "none",
+            transition: "color 0.2s",
+          }}
+        >
+          {label}
+        </a>
+      ))}
       </div>
     </footer>
   );

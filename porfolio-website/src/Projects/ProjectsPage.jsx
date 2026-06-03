@@ -161,7 +161,7 @@ export default function ProjectsPage() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;750&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: #EEEAE3; }
       `}</style>

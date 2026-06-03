@@ -30,7 +30,7 @@ export default function AboutPage() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;750&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
         @keyframes fadeUp {
@@ -67,7 +67,7 @@ export default function AboutPage() {
             href="/"
             style={{
               fontFamily: "'Syne', sans-serif",
-              fontWeight: 800,
+              fontWeight: 700,
               fontSize: "1rem",
               letterSpacing: "-0.02em",
               color: colors.dark ?? "#111111",

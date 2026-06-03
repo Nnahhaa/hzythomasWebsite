@@ -42,13 +42,13 @@ export const skills = [
 /* Morals */
 export const aboutCols = [
   { num: "∞", numColor: "#FF5C3A", title: "Passion-driven", body: "I love learning new tech and building things from scratch. If there's a better way to do something, I'll find it.", bg: "#F5F0E8", dark: false },
-  { num: "</>", numColor: "#C8F135", title: "Code is craft", body: "Clean, readable, tested. I care about maintainability as much as functionality.", bg: "#1A1A1A", dark: true },
-  { num: "24/7", numColor: "#3A8BFF", title: "Details matter", body: "Its the little things that adds up. I care about the small details which can make a great impact.", bg: "#F5F0E8", dark: false },
+  { num: "</>", numColor: "#C8F135", title: "Code is craft", body: "Building something that works is important; building it well is just as important.", bg: "#1A1A1A", dark: true },
+  { num: "24/7", numColor: "#3A8BFF", title: "Details matter", body: "It's the little things that add up. I pay attention to the details because they often make the biggest difference.", bg: "#F5F0E8", dark: false },
 ];
   
 
 export const globalStyles = `
-  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;730&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { background: #F5F0E8; }
   @keyframes pulse {
