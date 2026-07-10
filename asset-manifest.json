@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hzythomasWebsite/static/css/main.e6c13ad2.css",
+    "main.js": "/hzythomasWebsite/static/js/main.4bb8c28c.js",
+    "static/js/453.f8d11842.chunk.js": "/hzythomasWebsite/static/js/453.f8d11842.chunk.js",
+    "index.html": "/hzythomasWebsite/index.html",
+    "main.e6c13ad2.css.map": "/hzythomasWebsite/static/css/main.e6c13ad2.css.map",
+    "main.4bb8c28c.js.map": "/hzythomasWebsite/static/js/main.4bb8c28c.js.map",
+    "453.f8d11842.chunk.js.map": "/hzythomasWebsite/static/js/453.f8d11842.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.4bb8c28c.js"
+  ]
+}
