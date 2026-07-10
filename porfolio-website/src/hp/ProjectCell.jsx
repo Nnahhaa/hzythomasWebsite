@@ -10,8 +10,9 @@ export default function ProjectCell({ project }) {
 
   return (
     <div
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+    onClick={() => project.link && window.open(project.link, "_blank")}
+    onMouseEnter={() => setHovered(true)}
+    onMouseLeave={() => setHovered(false)}
       style={{
         background: project.bg,
         borderRight: `1.5px solid ${colors.dark}`,

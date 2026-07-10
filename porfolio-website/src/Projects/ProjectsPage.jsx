@@ -6,9 +6,10 @@ const projects = [
     num: "01",
     name: "DisasterReady",
     desc: "Bridging disaster victims and agencies together",
-    stack: "REACT · CSS",
+    stack: "REACT · JS",
     color: "#F04E30",
     darkText: false,
+    link: "https://disasterready.us/"
   },
   {
     num: "02",
@@ -17,6 +18,7 @@ const projects = [
     stack: "LLM · PYTHON",
     color: "#7B4AE2",
     darkText: false,
+    link: "https://colab.research.google.com/drive/117PMBhD2NdiSDB8IxSUdwwoimC61ljCG?usp=sharing",
   },
   {
     num: "03",
@@ -25,6 +27,7 @@ const projects = [
     stack: "LLM · PYTHON",
     color: "#C8E617",
     darkText: true,
+    link: "https://github.com/ninjaXjuju/CIS-412-Project",
   },
   {
     num: "05",
@@ -48,7 +51,10 @@ function ProjectRow({ project }) {
   const textColor = hovered ? (project.darkText ? "#111111" : "#ffffff") : undefined;
 
   return (
-    <div
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noreferrer"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
@@ -99,9 +105,10 @@ function ProjectRow({ project }) {
       <span style={{ position: "relative", zIndex: 1, fontSize: "1.5rem", color: textColor, opacity: hovered ? 1 : 0, transform: hovered ? "translateX(0)" : "translateX(8px)", transition: "opacity 0.2s, transform 0.2s", textAlign: "right" }}>
         →
       </span>
-    </div>
+    </a>
   );
 }
+
 
 export default function ProjectsPage() {
   const [hoveredFooter, setHoveredFooter] = useState(null);

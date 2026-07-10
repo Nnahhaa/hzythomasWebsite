@@ -110,7 +110,7 @@ export default function AboutPage() {
         <section style={{ padding: "5rem 2.5rem 4rem", borderBottom: "1px solid rgba(0,0,0,0.12)" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "end", marginBottom: "3.5rem" }}>
             <div>
-              <p style={{ fontFamily: "'Syne', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.12em", color: "#888580", marginBottom: "1.25rem" }}>ABOUT ME</p>
+              {/* <p style={{ fontFamily: "'Syne', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.12em", color: "#888580", marginBottom: "1.25rem" }}>ABOUT ME</p> */}
               <h1 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(3rem, 7vw, 5.5rem)", fontWeight: 800, lineHeight: 0.92, letterSpacing: "-0.04em" }}>
                 Hannah<br />
                 <span style={{ color: colors.coral ?? "#F04E30" }}>Thomas.</span>
@@ -142,7 +142,7 @@ export default function AboutPage() {
         {/* Skills & Experience */}
         <section style={{ padding: "5rem 2.5rem 4rem", borderBottom: "1px solid rgba(0,0,0,0.12)" }}>
           <div style={{ marginBottom: "3.5rem" }}>
-            <p style={{ fontFamily: "'Syne', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.12em", color: "#888580", marginBottom: "1.25rem" }}>WHAT I BRING</p>
+            {/* <p style={{ fontFamily: "'Syne', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.12em", color: "#888580", marginBottom: "1.25rem" }}>WHAT I BRING</p> */}
             <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(3rem, 8vw, 6rem)", fontWeight: 700, lineHeight: 0.9, letterSpacing: "-0.04em" }}>
             Skills &<br />
             <span style={{ color: "#F04E30" }}>Experience.</span>
@@ -184,13 +184,13 @@ export default function AboutPage() {
         <section style={{ padding: "5rem 2.5rem 4rem", borderBottom: "1px solid rgba(0,0,0,0.12)" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "end", marginBottom: "3.5rem" }}>
             <div>
-              <p style={{ fontFamily: "'Syne', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.12em", color: "#888580", marginBottom: "0.75rem" }}>WHEN I'M NOT CODING</p>
+              {/* <p style={{ fontFamily: "'Syne', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.12em", color: "#888580", marginBottom: "0.75rem" }}>WHEN I'M NOT CODING</p> */}
               <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(2rem, 5vw, 3.25rem)", fontWeight: 800, letterSpacing: "-0.03em", lineHeight: 1.05 }}>
                 Grandma hobbies,<br />
                 <span style={{ color: colors.coral ?? "#F04E30" }}>proudly.</span>
               </h2>
             </div>
-            <p style={{ fontSize: "0.875rem", lineHeight: 1.7, color: "#888580", fontStyle: "italic" }}>Yes, I crochet. And yes, I talk to my books.</p>
+            <p style={{ fontSize: "0.875rem", lineHeight: 1.7, color: "#888580", fontStyle: "italic" }}>When I'm not staring at my computer, I love to crochet, read (sci-fi is my favorite), and do any granny hobbies! I love improving and seeing my progeress getting better.</p>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", border: "1px solid rgba(0,0,0,0.12)" }}>
@@ -212,7 +212,7 @@ export default function AboutPage() {
         {/* Contact */}
         <section style={{ padding: "5rem 2.5rem 5rem", borderBottom: "1px solid rgba(0,0,0,0.12)" }}>
           <div style={{ marginBottom: "3.5rem" }}>
-            <p style={{ fontFamily: "'Syne', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.12em", color: "#888580", marginBottom: "1.25rem" }}>GET IN TOUCH</p>
+            {/* <p style={{ fontFamily: "'Syne', sans-serif", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.12em", color: "#888580", marginBottom: "1.25rem" }}>GET IN TOUCH</p> */}
             <h1 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(3rem, 8vw, 6rem)", fontWeight: 700, lineHeight: 0.9, letterSpacing: "-0.04em" }}>
             Let's<br />
             <span style={{ color: "#F04E30" }}>Connect.</span>

@@ -43,7 +43,7 @@ const resumes = [
     darkText: true,
     content: {
       summary: "Applied ML experience through hands-on projects in detection algorithms and face recognition.",
-      skills: ["Python", "LLMs", "Scikit-Learn", "CSV", "Data Processing", "Algorithm Design", "NumPy", "Pandas", "Jupyter Notebook", "Google Colab"],
+      skills: ["Python", "LLMs", "Scikit-Learn", "SVC", "Data Processing", "Algorithm Design", "NumPy", "Pandas", "Jupyter Notebook", "Google Colab"],
       experience: [
         { role: "Developer", org: "Autism Detection Project", desc: "Developed a supervised machine learning pipeline in Python to classify autism spectrum disorder using a structured dataset, implementing and comparing Logistic Regression, Support Vector Classifier, and XGBoost models with Scikit-learn, and performing data preprocessing, feature engineering, and model evaluation to improve predictive performance." },
         { role: "Developer", org: "Face Recognition Attendance", desc: "Collaborated in a team of three to build a Python-based face recognition system for student enrollment and attendance tracking using AVCaptureDevice for real-time facial data capture, and stored encoded facial features in pki files for efficient recognition and retrieval." },
