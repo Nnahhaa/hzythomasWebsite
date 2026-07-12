@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { colors } from "../constants";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -131,9 +132,10 @@ export default function ProjectsPage() {
           <ul style={{ listStyle: "none", display: "flex", gap: "2rem" }}>
             {["Projects", "About", "Resume"].map((item) => (
               <li key={item}>
-                <a href={`/${item.toLowerCase()}`} style={{ fontSize: "0.875rem", color: "#111111", textDecoration: "none", opacity: item === "Projects" ? 1 : 0.6 }}>
+                <Link
+                to={`/${item.toLowerCase()}`} style={{ fontSize: "0.875rem", color: "#111111", textDecoration: "none", opacity: item === "Projects" ? 1 : 0.6 }}>
                   {item}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { colors } from "../constants";
+import { Link } from "react-router-dom";
 
 const hobbies = [
   { emoji: "🧶", name: "Crocheting", desc: "There's something meditative about turning yarn into something real. Also great for long TV binges." },
@@ -98,9 +99,11 @@ export default function AboutPage() {
           <ul style={{ listStyle: "none", display: "flex", gap: "2rem" }}>
             {["Projects", "About", "Resume"].map((item) => (
               <li key={item}>
-                <a href={`/${item.toLowerCase()}`} style={{ fontSize: "0.875rem", color: "#111", textDecoration: "none", opacity: item === "About" ? 1 : 0.55, fontWeight: item === "About" ? 500 : 400 }}>
+                <Link
+                to={`/${item.toLowerCase()}`} 
+                style={{ fontSize: "0.875rem", color: "#111", textDecoration: "none", opacity: item === "About" ? 1 : 0.55, fontWeight: item === "About" ? 500 : 400 }}>
                   {item}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
