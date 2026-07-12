@@ -125,7 +125,7 @@ export default function ProjectsPage() {
 
         {/* Nav */}
         <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.25rem 2.5rem", borderBottom: "1px solid rgba(0,0,0,0.12)" }}>
-          <a href="/" style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "1rem", letterSpacing: "-0.02em", color: "#111111", textDecoration: "none" }}>
+          <a href="" style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "1rem", letterSpacing: "-0.02em", color: "#111111", textDecoration: "none" }}>
             hzythomas
           </a>
           <ul style={{ listStyle: "none", display: "flex", gap: "2rem" }}>

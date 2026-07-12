@@ -6,7 +6,7 @@ import ResumePage from './Resume/ResumePage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/hzythomasWebsite">
       <Routes>
         <Route path="/" element={<PortfolioHomepage />} />
         <Route path="/projects" element={<ProjectsPage />} />

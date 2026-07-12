@@ -44,7 +44,7 @@ export default function PortfolioHomepage() {
             Selected work
           </span>
           <a
-            href="/projects"
+            href="projects"
             style={{
               fontSize: "0.8rem",
               color: colors.sky,
