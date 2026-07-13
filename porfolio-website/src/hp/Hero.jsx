@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { colors } from "../constants";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const [mounted, setMounted] = useState(false);
@@ -128,9 +129,9 @@ export default function Hero() {
         {/* CTA buttons */}
         <div style={styles.buttonGroup}>
           {buttons.map(({ label, primary, href }) => (
-            <a
+            <Link
               key={label}
-              href={href}
+              to={href}
               onMouseEnter={() => setBtnHover(label)}
               onMouseLeave={() => setBtnHover(null)}
               style={{
@@ -141,7 +142,7 @@ export default function Hero() {
               }}
             >
               {label}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

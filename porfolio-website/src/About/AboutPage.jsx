@@ -93,9 +93,10 @@ export default function AboutPage() {
 
         {/* Nav */}
         <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.25rem 2.5rem", borderBottom: "1px solid rgba(0,0,0,0.12)" }}>
-          <a href="" style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "1rem", letterSpacing: "-0.02em", color: "#111", textDecoration: "none" }}>
+          <Link
+            to="/" style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "1rem", letterSpacing: "-0.02em", color: "#111", textDecoration: "none" }}>
             hzythomas
-          </a>
+          </Link>
           <ul style={{ listStyle: "none", display: "flex", gap: "2rem" }}>
             {["Projects", "About", "Resume"].map((item) => (
               <li key={item}>

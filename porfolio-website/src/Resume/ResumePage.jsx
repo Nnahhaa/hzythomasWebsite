@@ -178,17 +178,17 @@ export default function ResumePage() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;750;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');        * { box-sizing: border-box; margin: 0; padding: 0; }
       `}</style>
 
       <div style={{ background: colors.warm ?? "#EEEAE3", color: "#111111", minHeight: "100vh", fontFamily: "'DM Sans', sans-serif" }}>
 
         {/* Nav */}
         <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.25rem 2.5rem", borderBottom: "1px solid rgba(0,0,0,0.12)" }}>
-          <a href="" style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "1rem", letterSpacing: "-0.02em", color: "#111111", textDecoration: "none" }}>
+          <Link 
+            to="/" style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "1rem", letterSpacing: "-0.02em", color: "#111111", textDecoration: "none" }}>
             hzythomas
-          </a>
+          </Link>
           <ul style={{ listStyle: "none", display: "flex", gap: "2rem" }}>
             {["Projects", "About", "Resume"].map((item) => (
               <li key={item}>
